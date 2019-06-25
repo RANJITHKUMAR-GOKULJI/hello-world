@@ -15,8 +15,21 @@ h4{
     color: #696969b3;
 
 }
+.header-content{
+	padding: 20px 20px 5px 40px;
+	background: #0080808f;
+	color: white;
+    font-size: x-large;
+    font-style: normal;
+    font-family: monospace;
+    line-height: 2em;
+}
+.header-content h4{
+	line-height: 1.3em;
+}
+
 .content-1{
-	padding:20px 20px 20px 50px;
+	padding: 5px 20px 20px 100px;
 }
 .content-2{
 	padding-top:20px;
