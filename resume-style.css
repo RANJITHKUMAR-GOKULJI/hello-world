@@ -17,12 +17,12 @@ h4{
 }
 .header-content{
 	padding: 20px 20px 5px 40px;
-	background: #0080808f;
+	background: teal;
 	color: white;
-    font-size: x-large;
-    font-style: normal;
-    font-family: monospace;
-    line-height: 2em;
+    	font-size: x-large;
+    	font-style: normal;
+    	font-family: monospace;
+    	line-height: 2em;
 }
 .header-content h4{
 	line-height: 1.3em;
