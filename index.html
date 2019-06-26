@@ -2,19 +2,31 @@
 <head>
 	<title> Ranjith Resume </title>
 	<link rel="stylesheet" href="resume-style.css" />
+	
+	<script src="print.js"></script>
+	<link rel="stylesheet" type="text/css" href="print.css">
+	
 </head>
 
-<body>
+<body onload="alert('This website is NOT Responsice Design. Make sure your screen size 1280px for better experience!');">
 <div name="full-body" class="body-content">
 	<div name="header" class="header-content">
-		<h1>Ranjithkumar S G </h1>
-		<h4>Madurai, Tamil Nadu <br> sgrkranjithkumar@gmail.com <br> +91 9092269469 </h4>
+		<div name="header-info">
+			<h1>Ranjithkumar S G </h1>
+			<h4>Madurai, TamilNadu <br> sgrkranjithkumar@gmail.com <br> +91 9092269469 </h4>
+		</div>
+		<div name="header-menu">
+			<p> <a href="index.html"> Resume </a> - <a href="randd/color-zone.html"> Color-Zone </a> </p>
+		</div>
+		<div name="download-buttons" style="float: right; display: none;">
+			<input type="button" id="down-pdf" value="Download as PDF" onclick="printJS('docs/PrintJS.pdf');">  </input>
+		</div>
 	</div>
 	<div name="content-1" class="content-1">
 		<div name="work-experience" class="content-2">
 			<h3>Work Experience </h3>
 				<h4>Web Developer</h4> 
-					<p>Shriyadita Graphics Universe, Madurai city, Tamilnadu</p>
+					<p id="second-title">Shriyadita Graphics Universe, Madurai city, Tamilnadu</p>
 					<p id="time-period">January 2019 to Present </p>
 					<div class="content-3" name="order-list">
 						<p>Working as a web developer for last 6 months</p>
@@ -25,27 +37,46 @@
 					</div>
 					
 				<h4> Computer Operator </h4>
-					<p> Maruthi Agency - Madurai, Tamil Nadu </p>
+					<p id="second-title"> Maruthi Agency - Madurai, Tamil Nadu </p>
 					<p id="time-period"> January 2015 to February 2018 </p>
+					<div class="content-3" name="order-list">					
 						<p> Worked as a computer operator in Maruti Agency (wholesale footwear dealer) for 3 years in my college days. </p>
+					</div>
 		</div>
 
 		<div name="education" class="content-2">  
 			<h3> Education </h3>
 				<h4> B.Sc. in Computer Science </h4>
-					The Madura College - Madurai City, Tamil Nadu
+					<p>The Madura College - Madurai City, Tamil Nadu</p>
 					<p id="time-period"> June 2014 to June 2017 with 78.75 % </p>
 				<h4> H.S.C in State Board </h4>
-					Sourashtra Co-Edu Hr. Sec. School - Madurai, Tamil Nadu
+					<p> Sourashtra Co-Edu Hr. Sec. School - Madurai, Tamil Nadu </p>
 					<p id="time-period"> June 2013 to May 2014 with 87.25 % </p>
 				<h4> S.S.L.C in State Board </h4>
-					Sourashtra Co-Edu Hr. Sec. School - Madurai, Tamil Nadu
+					<p> Sourashtra Co-Edu Hr. Sec. School - Madurai, Tamil Nadu </p>
 					<p id="time-period"> June 2011 to May 2012 with 91.60 % </p>
 		</div>
 
 		<div name="skills" class="content-2">
 			<h3> Skills </h3>
-				<p> HTML5, CSS3, PHP- codeigniter , Javascript, JQuery, MySQL, Microsoft Office, DTP. </p>
+			<div name="skills-list" class="skills-list">
+				<ul>
+					<div id="list-rowz" class="list-rowz">
+						<li> HTML5 </li>
+						<li> CSS3 </li>
+						<li> PHP- codeigniter </li>
+					</div>					
+					<div id="list-rowz" class="list-rowz">
+						<li> Javascript </li>
+						<li> JQuery </li>
+						<li> MySQL </li>
+					</div>					
+					<div id="list-rowz" class="list-rowz">
+						<li> Microsoft Office </li>
+						<li> DTP.</li>
+					</div>
+				  </ul>
+			</div>
 		</div>
 
 		<div name="awards" class="content-2">
@@ -81,11 +112,17 @@
 
 		<div name="publications" class="content-2">		
 			<h3> Publications </h3>
-				<h4> WEB PAGE: http://7-dot-arun3550-159312.appspot.com/ </h4>
+				<h4> Web page: <a href="http://7-dot-arun3550-159312.appspot.com/"> http://7-dot-arun3550-159312.appspot.com/ </a></h4>
 				<p id="time-period"> June 2017 </p>
 					<ul>
 						<li> Shows my interest to Web-Development. </li>
 						<li> Sample project to demonstrate my skills and knowledge. </li>
+					</ul>
+				<h4> Web page: <a href="https://ranjithkumar-gokulji.github.io/resume/"> https://ranjithkumar-gokulji.github.io/resume/ </a></h4>
+				<p id="time-period"> June 2019 </p>
+					<ul>
+						<li> This Webpage construct by HTML, CSS, Javascript </li>
+						<li> Sample project to demonstrate my skills and knowledge on Web-Development. </li>
 					</ul>
 		</div>
 
