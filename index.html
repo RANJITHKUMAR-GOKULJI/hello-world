@@ -2,24 +2,27 @@
 <head>
 	<title> Ranjith Resume </title>
 	<link rel="stylesheet" href="resume-style.css" />
-	
-	<script src="print.js"></script>
-	<link rel="stylesheet" type="text/css" href="print.css">
-	
 </head>
 
 <body onload="alert('This website is NOT Responsice Design. Make sure your screen size 1280px for better experience!');">
 <div name="full-body" class="body-content">
 	<div name="header" class="header-content">
-		<div name="header-info">
-			<h1>Ranjithkumar S G </h1>
-			<h4>Madurai, TamilNadu <br> sgrkranjithkumar@gmail.com <br> +91 9092269469 </h4>
+		<div class="header-left">
+			<div name="header-info">
+				<h1>Ranjithkumar S.G.</h1>
+				<h4>Madurai, TamilNadu <br> sgrkranjithkumar@gmail.com <br> +91 9092269469 </h4>
+			</div>
+			<div name="header-menu">
+				<p> <a href="index.html"> Resume </a> - <a href="randd/color-zone.html"> Color-Zone </a> </p>
+			</div>
 		</div>
-		<div name="header-menu">
-			<p> <a href="index.html"> Resume </a> - <a href="randd/color-zone.html"> Color-Zone </a> </p>
+		<div name="profile-pic" class="profile-pic header-right">
+			<img src="profile-pic.jpg" id="prof-pic"></img>
 		</div>
-		<div name="download-buttons" style="float: right; display: none;">
-			<input type="button" id="down-pdf" value="Download as PDF" onclick="printJS('docs/PrintJS.pdf');">  </input>
+		<div name="download-buttons" class="download-button">
+			<a href="https://drive.google.com/open?id=1MCvU8od21gL1kLHlRFKoK5FLChnjMedo">
+				<input type="button" id="down-pdf" value="Download as PDF">  </input>
+			</a>
 		</div>
 	</div>
 	<div name="content-1" class="content-1">
@@ -30,10 +33,10 @@
 					<p id="time-period">January 2019 to Present </p>
 					<div class="content-3" name="order-list">
 						<p>Working as a web developer for last 6 months</p>
-							<ol>
-								<li> Frontend - HTML5, CSS3 </li>
-								<li> Back-end - PHP (Code igniter), MySQL </li>
-							</ol>
+							<ul style="list-style:none;">
+								<li>1. Frontend - HTML5, CSS3 </li>
+								<li>2. Back-end - PHP (Code igniter), MySQL </li>
+							</ul>
 					</div>
 					
 				<h4> Computer Operator </h4>
@@ -73,7 +76,7 @@
 					</div>					
 					<div id="list-rowz" class="list-rowz">
 						<li> Microsoft Office </li>
-						<li> DTP.</li>
+						<li> DTP</li>
 					</div>
 				  </ul>
 			</div>
@@ -141,6 +144,9 @@
 					<li> Desire to grow up in short period and Observation ability. </li>
 				</ul>
 		</div>
+	</div>
+	<div name="footer" class="footer-content  header-content">
+		<h4> Thanks for visiting My Website!! </h4>
 	</div>
 </div>
 
