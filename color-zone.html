@@ -1,0 +1,117 @@
+
+<html>
+
+<head>
+	<title> Ranjith Resume </title>
+	<link rel="stylesheet" href="resume-style.css" />
+
+<script type="text/javascript">		
+function color_box(){
+	alert("red");
+}
+
+function color_unset(box_id){
+	var x = document.getElementById("box" + box_id);
+	x.style.background = "white";
+	//alert("Unset");
+}
+
+function color_reset(color_name, box_id){
+	var x = document.getElementById("box" + box_id);
+	x.style.background = color_name;
+	//alert("set " + color_name);
+}
+
+function color_set(color_name){
+			var s = 1;	
+			for(var j=1;j<9;j++){
+				var p = document.getElementById("box" + j);
+				var k = p.style.background;
+				if(k == color_name){
+					s=2;
+					color_unset(j);					
+					j=9;
+				}
+			}
+			if(s == 1){
+				for(var i=1;i<9;i++){
+				var x = document.getElementById("box" + i);
+				var y = x.style.background;
+					if(y == "white"){
+						color_reset(color_name, i);
+						i=9;						
+					}
+				}
+			}
+}
+
+
+function checkboxing(){
+	alert("red");
+}
+</script>
+
+</head>
+
+<body olnLoad="alert('This website is NOT Responsice Design. Make sure your screen size 1280px for better experience!');">
+
+
+<div name="full-body" class="body-content">
+	<div name="header" class="header-content">
+		<div class="header-left">
+			<div name="header-info">
+				<h1>Ranjithkumar S G </h1>
+				<h4>Madurai, TamilNadu <br> sgrkranjithkumar@gmail.com <br> +91 9092269469 </h4>
+			</div>
+			<div name="header-menu">
+				<p> <a href="index.html"> Resume </a> - <a href="color-zone.html"> Color-Zone </a> </p>
+			</div>
+		</div>
+		<div name="profile-pic" class="profile-pic header-right">
+			<img src="profile-pic.jpg" id="prof-pic"></img>
+		</div>
+		<div name="download-buttons" class="download-button" style="display:none">
+			<a href="https://drive.google.com/open?id=1MCvU8od21gL1kLHlRFKoK5FLChnjMedo">
+				<input type="button" id="down-pdf" value="Download as PDF">  </input>
+			</a>
+		</div>
+	</div>
+	<div name="content-1" class="content-1">
+		<div name="work-experience" class="content-2">
+			<div id="checkbox-div">
+				<input type="checkbox" class="checkbox" onclick="color_set('red')"> Red </input>
+				<input type="checkbox" class="checkbox" onclick="color_set('green')"> Green </input>
+				<input type="checkbox" class="checkbox" onclick="color_set('yellow')"> Yellow </input>				
+				<input type="checkbox" class="checkbox" onclick="color_set('pink')"> Pink </input>
+				<input type="checkbox" class="checkbox" onclick="color_set('blue')"> Blue </input>
+				<input type="checkbox" class="checkbox" onclick="color_set('black')"> Black </input>	
+				<input type="checkbox" class="checkbox" onclick="color_set('brown')"> Brown </input>
+				<input type="checkbox" class="checkbox" onclick="color_set('gray')"> Gray </input>		
+			</div>
+			<div id="colorboxes" class="colorbox-div">
+				<div class="color_container" id="box10">
+					<div id="box1" class="box" style="background:white;">		</div>
+					<div id="box2" class="box" style="background:white;">		</div>
+					<div id="box3" class="box" style="background:white;">		</div>					
+					<div id="box4" class="box" style="background:white;">		</div>
+					<div id="box5" class="box" style="background:white;">		</div>
+					<div id="box6" class="box" style="background:white;">		</div>	
+					<div id="box7" class="box" style="background:white;">		</div>
+					<div id="box8" class="box" style="background:white;">		</div>	
+				</div>
+			</div>
+			<div class="radio-div">
+				<input type="radio" name="color" onClick="color_reset('red', 10)"> Red </input>
+				<input type="radio" name="color" onClick="color_reset('green', 10)"> Green </input>
+				<input type="radio" name="color" onClick="color_reset('yellow', 10)"> Yellow </input>
+				<input type="radio" name="color" onClick="color_reset('pink', 10)"> Pink </input>
+				<input type="radio" name="color" onClick="color_reset('blue', 10)"> Blue </input>
+				<input type="radio" name="color" onClick="color_reset('orange', 10)"> Orange </input>
+				<input type="radio" name="color" onClick="color_reset('brown', 10)"> Brown </input>
+				<input type="radio" name="color" onClick="color_reset('gray', 10)"> Gray </input>
+			</div>
+		</div>
+	</div>
+</div>
+<body>
+</html>
