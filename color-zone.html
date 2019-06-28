@@ -71,6 +71,7 @@ function checkboxing(){
 	<div name="content-1" class="content-1" id="content-1">
 		<div name="work-experience" class="content-2">
 			<div class="checkbox-div">
+			<h4>Set Box color </h4>
 				<input type="checkbox" class="checkbox" onclick="color_set('red')"> Red </input>
 				<input type="checkbox" class="checkbox" onclick="color_set('green')"> Green </input>
 				<input type="checkbox" class="checkbox" onclick="color_set('yellow')"> Yellow </input>				
@@ -81,6 +82,7 @@ function checkboxing(){
 				<input type="checkbox" class="checkbox" onclick="color_set('gray')"> Gray </input>		
 			</div>
 			<div class="radio-div">
+			<h4>Set Background color </h4>
 				<input type="radio" name="color" onClick="color_reset('red', 10)"> Red </input>
 				<input type="radio" name="color" onClick="color_reset('green', 10)"> Green </input>
 				<input type="radio" name="color" onClick="color_reset('yellow', 10)"> Yellow </input>
@@ -102,6 +104,11 @@ function checkboxing(){
 					<div id="box8" class="box" style="background:white;">		</div>	
 				</div>
 			</div>
+		<!--<div id="colorset-buttons" class="colorsetbuttons" style="display:none;">
+				<input type="button" class="" value="Reset Box Color" onclick="reset_box()"/>
+				<input type="button" class="" value="Reset-All" onclick="reset_back()"/>
+				<input type="button" class="" value="Reset Background Color" onclick="reset_all()"/>				
+			</div> -->
 		</div>
 	</div>
 </form>
