@@ -135,11 +135,21 @@ a.active{
 	font-family: monospace;
     font-size: 20px;	
 }
+.colorsetbuttons input{
+    background: teal;
+    color: white;
+    padding: 4px;
+    border: 1px solid teal;	
+	border-radius:4px;
+	font-family: monospace;
+    font-size: 16px;	
+}
 .colorbox-div{
     width: 40%;
     height: 300px;
     border: 0px solid black;
-    margin: 35px 20% 0px 30%;	
+    margin: 35px 20% 0px 30%;
+	clear:both;
 }
 .color_container{
 	height:100%;
@@ -159,6 +169,10 @@ a.active{
 	width:45%;
 	float:right;
 }
+.colorsetbuttons{
+    margin-left:10%;
+}
+
 #second-title{
 	color:crimson;
 	font-size: 17px;
