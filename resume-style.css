@@ -187,6 +187,8 @@ a.active{
 }
 #prof-pic{
 	border-radius: 360px;
+	height: 100px;
+	width: 100px;
 }
 .body-content{
 	background: #f7f6f5;
